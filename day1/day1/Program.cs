@@ -15,6 +15,7 @@
 //○	Parameterized Constructor to initialize products.
 //○	Destructor to print a message when a product is removed from the system.
 
+using System;
 
 class Product
 {
@@ -51,7 +52,6 @@ class Product
     ~Product()
     {
         Console.WriteLine($"Product with Name: {Name}, ProductID: {ProductID}, Price: {Price}, and StockQuantity: {StockQuantity} destroyed.");
-
     }
 }
 
