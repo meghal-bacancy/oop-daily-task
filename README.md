@@ -18,3 +18,5 @@ Implement:
 
 ![day1_1](/img/day1_1.png)
 ![day1_2](/img/day1_2.png)
+
+Destructor is only called by programiz.com c# compiler
