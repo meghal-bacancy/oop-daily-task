@@ -16,5 +16,5 @@ Implement:
 1. Parameterized Constructor to initialize products.
 2. Destructor to print a message when a product is removed from the system.
 
-![day1_1](/oop-daily-task/blob/master/img/day1_1.png)
-![day1_2](/oop-daily-task/blob/master/img/day1_2.png)
+![day1_1](/img/day1_1.png)
+![day1_2](/img/day1_2.png)
