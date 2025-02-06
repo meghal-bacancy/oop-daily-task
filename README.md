@@ -27,8 +27,8 @@ Online Shopping System
 Inheritance(Base & Derived Classes, base Keyword, Method Overriding)
 1. Create a base class Item with common attributes(ProductID, Name).
 2. Create derived classes:
-    a. Electronics(with additional warranty period).
-    b. Clothing(with size and material attributes).
+    * Electronics(with additional warranty period).
+    * Clothing(with size and material attributes).
 3. Use the base keyword in derived classes to call the parent constructor.
 4. Override DisplayProductDetails() to provide product-specific details.
 
