@@ -52,12 +52,12 @@ Abstraction(Abstract Classes vs Interfaces)
 4. Implement Explicit Interface Implementation in ShoppingCart.
 
 Sealed Class
-    1. Implement a sealed class PaymentProcessor to handle payments.
-    2. Add a method ProcessPayment(decimal amount, string paymentMethod).
+1. Implement a sealed class PaymentProcessor to handle payments.
+2. Add a method ProcessPayment(decimal amount, string paymentMethod).
 
 Partial Class
 Implement a partial class ShoppingCartOperations :
-    1. One part handles AddProduct() and RemoveProduct().
-    2. Another part handles UpdateStock() and DisplayCart()
+1. One part handles AddProduct() and RemoveProduct().
+2. Another part handles UpdateStock() and DisplayCart()
 
 ![day2](/img/day2.png)
