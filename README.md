@@ -33,31 +33,31 @@ Inheritance(Base & Derived Classes, base Keyword, Method Overriding)
 4. Override DisplayProductDetails() to provide product-specific details.
 
 Polymorphism(Method Overloading, Method Overriding, Virtual Methods)
-●	Implement Method Overloading:
-    ○	ApplyDiscount(decimal percentage)
-    ○	ApplyDiscount(decimal percentage, bool isLoyalCustomer)
-●	Implement Method Overriding:
-    ○	Use virtual in Item for CalculateFinalPrice().
-    ○	Override CalculateFinalPrice() in Electronics and Clothing
+1. Implement Method Overloading:
+    * ApplyDiscount(decimal percentage)
+    * ApplyDiscount(decimal percentage, bool isLoyalCustomer)
+2. Implement Method Overriding:
+    * Use virtual in Item for CalculateFinalPrice().
+    * Override CalculateFinalPrice() in Electronics and Clothing
 
 Abstraction(Abstract Classes vs Interfaces)
-●	Create an abstract class ShoppingService :
-    ○	Abstract method GetCategory().
-    ○	Non-abstract method PrintShoppingPolicy().
-●	Implement ShoppingService in Product.
-●	Create an interface IShoppingCartOperations :
-    ○	void AddProduct(int productID, int quantity);
-    ○	void RemoveProduct(int productID);
-    ○	void DisplayCart();
-●	Implement Explicit Interface Implementation in ShoppingCart.
+1. Create an abstract class ShoppingService :
+    * Abstract method GetCategory().
+    * Non-abstract method PrintShoppingPolicy().
+2.	Implement ShoppingService in Product.
+3. Create an interface IShoppingCartOperations :
+    * void AddProduct(int productID, int quantity);
+    * void RemoveProduct(int productID);
+    * void DisplayCart();
+4. Implement Explicit Interface Implementation in ShoppingCart.
 
 Sealed Class
-    ●	Implement a sealed class PaymentProcessor to handle payments.
-    ●	Add a method ProcessPayment(decimal amount, string paymentMethod).
+    1. Implement a sealed class PaymentProcessor to handle payments.
+    2. Add a method ProcessPayment(decimal amount, string paymentMethod).
 
 Partial Class
 Implement a partial class ShoppingCartOperations :
-    ●	One part handles AddProduct() and RemoveProduct().
-    ●	Another part handles UpdateStock() and DisplayCart()
+    1. One part handles AddProduct() and RemoveProduct().
+    2. Another part handles UpdateStock() and DisplayCart()
 
 ![day2](/img/day2.png)
