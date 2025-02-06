@@ -20,3 +20,44 @@ Implement:
 ![day1_2](/img/day1_2.png)
 
 Destructor is only called by programiz.com c# compiler
+
+## Day 2
+Online Shopping System
+
+Inheritance(Base & Derived Classes, base Keyword, Method Overriding)
+●	Create a base class Item with common attributes(ProductID, Name).
+●	Create derived classes:
+    ○	Electronics(with additional warranty period).
+    ○	Clothing(with size and material attributes).
+●	Use the base keyword in derived classes to call the parent constructor.
+●	Override DisplayProductDetails() to provide product-specific details.
+
+Polymorphism(Method Overloading, Method Overriding, Virtual Methods)
+●	Implement Method Overloading:
+    ○	ApplyDiscount(decimal percentage)
+    ○	ApplyDiscount(decimal percentage, bool isLoyalCustomer)
+●	Implement Method Overriding:
+    ○	Use virtual in Item for CalculateFinalPrice().
+    ○	Override CalculateFinalPrice() in Electronics and Clothing
+
+Abstraction(Abstract Classes vs Interfaces)
+●	Create an abstract class ShoppingService :
+    ○	Abstract method GetCategory().
+    ○	Non-abstract method PrintShoppingPolicy().
+●	Implement ShoppingService in Product.
+●	Create an interface IShoppingCartOperations :
+    ○	void AddProduct(int productID, int quantity);
+    ○	void RemoveProduct(int productID);
+    ○	void DisplayCart();
+●	Implement Explicit Interface Implementation in ShoppingCart.
+
+Sealed Class
+    ●	Implement a sealed class PaymentProcessor to handle payments.
+    ●	Add a method ProcessPayment(decimal amount, string paymentMethod).
+
+Partial Class
+Implement a partial class ShoppingCartOperations :
+    ●	One part handles AddProduct() and RemoveProduct().
+    ●	Another part handles UpdateStock() and DisplayCart()
+
+![day2](/img/day2.png)
