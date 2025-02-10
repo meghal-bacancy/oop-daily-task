@@ -8,8 +8,8 @@ class Program
         PartTimeEmployee partTimeEmployee = new PartTimeEmployee();
         Intern intern = new Intern();
 
-        Console.WriteLine(fullTimeEmployee.CalculateSalary(50));
-        Console.WriteLine(partTimeEmployee.CalculateSalary(50));
-        Console.WriteLine(intern.CalculateSalary(50));
+        Console.WriteLine($"full time employee salary: {fullTimeEmployee.CalculateSalary(50)}");
+        Console.WriteLine($"part time employee salary: {partTimeEmployee.CalculateSalary(50)}");
+        Console.WriteLine($"intern salary: {intern.CalculateSalary(50)}");
     }
 }
