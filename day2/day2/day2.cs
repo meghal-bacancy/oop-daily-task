@@ -37,19 +37,25 @@
             Console.Write($"Product ID: {_id}, Name: {_name}");
         }
 
-        protected double ApplyDiscount(double percentage)
-        {
-            return (1 - percentage) * _price;
-        }
+        //protected double ApplyDiscount(double percentage)
+        //{
+        //    return (1 - percentage) * _price;
+        //}
 
-        protected double ApplyDiscount(double percentage, bool isLoyalCustomer)
+        //protected double ApplyDiscount(double percentage, bool isLoyalCustomer)
+        //{
+        //    return (1 - percentage - (0.1 * percentage)) * _price;
+        //}
+
+        public int GetPrice()
         {
-            return (1 - percentage - (0.1 * percentage)) * _price;
+            return _price;
         }
 
         public virtual double CalculateFinalPrice()
         {
-            return ApplyDiscount(0.2);
+            //return ApplyDiscount(0.2);
+            return 0.8 * _price;
         }
     }
 
@@ -71,7 +77,8 @@
 
         public override double CalculateFinalPrice()
         {
-            return ApplyDiscount(0.2, true);
+            //return ApplyDiscount(0.2, true);
+            return 0.9 * GetPrice();
         }
     }
 
@@ -95,7 +102,7 @@
 
         public override double CalculateFinalPrice()
         {
-            return ApplyDiscount(0.2, true);
+            return 0.9 * GetPrice();
         }
     }
 
