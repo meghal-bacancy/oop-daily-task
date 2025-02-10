@@ -61,3 +61,8 @@ Implement a partial class ShoppingCartOperations :
 2. Another part handles UpdateStock() and DisplayCart()
 
 ![day2](/img/day2.png)
+
+## Day 3
+You have an Employee Payment System that processes salaries for FullTimeEmployee and PartTimeEmployee.
+Modify the design so that adding a new Intern type doesn't modify existing code.
+![day3](/img/day3.png)
